@@ -1,15 +1,17 @@
 {
   "name": "pokemon-mini-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app runs the server for pokemon mini project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "proxy": "http://localhost:4500",
-  "keywords": [],
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -22,5 +24,8 @@
   "devDependencies": {
     "concurrently": "^6.4.0",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.13.0"
   }
 }
